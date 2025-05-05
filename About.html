@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" href="Assets/MasterNext Official Logo.png" type="image/png" sizes="32x32"> <!-- Added favicon -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="Assets/MasterNext Official Logo.png" alt="Logo" class="navbar-logo">
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Products.html">Our Products</a>
+            <a href="Learning.html">Our Trainings</a>
+        </div>
+        <a href="Contact.html"><button class="contact-button">Contact</button></a>
+    </div>
+
+    <section class="header-section">
+        <div class="decorative-circle circle-1"></div>
+        <div class="decorative-circle circle-2"></div>
+        <div class="header-content">
+            <h1>Our Vision and Mission</h1>
+            <p>
+                At MasterNext Technologies, we are driven by a vision to make technology accessible, scalable, and impactful for everyone. 
+                Our mission is to empower businesses and individuals through innovative solutions that prioritize education, real-world impact, and community-driven innovation.
+            </p>
+            <p>
+                We specialize in web and mobile development, AI-powered solutions, and creating opportunities for growth and learning. 
+                Together, we aim to build a global tech ecosystem that fosters collaboration and drives meaningful change.
+            </p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>About MasterNext Technologies</h2>
+        <div class="about-grid">
+            <div class="about-column">
+                <h3>Our Vision</h3>
+                <p>
+                    MasterNext Technologies was founded with a vision to revolutionize the tech industry by delivering innovative solutions and empowering individuals through education. 
+                    From our humble beginnings, we have grown into a global leader in technology and innovation, serving clients across various industries.
+                </p>
+            </div>
+            <div class="about-column">
+                <h3>Our Milestones</h3>
+                <p>
+                    Over the years, we have achieved key milestones, including the development of cutting-edge digital products, impactful training programs, and AI-powered solutions. 
+                    Our commitment to accessibility, scalability, and real-world impact drives us to create meaningful experiences for businesses and learners alike.
+                </p>
+            </div>
+            <div class="about-column">
+                <h3>Our Values</h3>
+                <p>
+                    At the heart of MasterNext Technologies lies a commitment to our core values: innovation, integrity, and inclusivity. 
+                    We strive to stay ahead of the curve by embracing emerging technologies and adapting to the ever-changing needs of our clients and the industry. 
+                    Our dedication to ethical practices and fostering a culture of inclusivity ensures that we create solutions that benefit everyone.
+                </p>
+            </div>
+            <div class="about-column">
+                <h3>Looking Ahead</h3>
+                <p>
+                    Looking ahead, we are excited to continue our journey of growth and innovation. Our future goals include expanding our global reach, 
+                    investing in research and development, and launching new initiatives that empower the next generation of tech leaders. 
+                    We are committed to making a lasting impact on the world through technology and education.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Let’s Build Together</h2>
+        <p>Collaborate with us to create impactful solutions tailored to your needs. Reach out today!</p>
+        <div class="cta-buttons">
+            <a href="Contact.html"><button class="primary-button">Contact Us</button></a>
+            <a href="BookDemo.html"><button class="outline-button">Book Demo</button></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 MasterNext Technologies. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="Contact.html">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/masternext.in/?utm_source=ig_web_button_share_sheet" target="_blank" class="social-link">Instagram</a>
+                <a href="https://www.linkedin.com/company/masternext-technologies-private-limited/" target="_blank" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll(
+                ".header-section, .features-list-section, .feature-section, .testimonial-section, .cta-section, .faq-section"
+            );
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add("visible");
+                        }
+                    });
+                },
+                { threshold: 0.1 }
+            );
+
+            sections.forEach((section) => observer.observe(section));
+        });
+    </script>
+</body>
+</html>

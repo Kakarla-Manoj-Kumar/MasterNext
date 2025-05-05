@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="icon" href="Assets/MasterNext Official Logo.png" type="image/png" sizes="32x32"> <!-- Added favicon -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="Assets/MasterNext Official Logo.png" alt="Logo" class="navbar-logo">
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Products.html">Our Products</a>
+            <a href="Learning.html">Our Trainings</a>
+        </div>
+        <a href="Contact.html"><button class="contact-button">Contact</button></a>
+    </div>
+    
+
+    <section class="header-section">
+        <div class="decorative-circle circle-1"></div>
+        <div class="decorative-circle circle-2"></div>
+        <div class="header-content">
+            <h1>Our Products</h1>
+            <p>
+                At MasterNext Technologies, we offer a diverse range of innovative products designed to empower businesses and individuals. 
+                From AI-powered solutions to scalable web and mobile applications, our products are purpose-driven and tailored to meet your unique needs.
+            </p>
+            <p>
+                Explore our offerings and discover how we can help you achieve your goals with cutting-edge technology and impactful solutions.
+            </p>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <h2>Custom Digital Business Solutions</h2>
+        <p>Tailored platforms and systems for startups and enterprises.</p>
+    </section>
+
+    <section class="feature-section">
+        <h2>Website Design & Development</h2>
+        <p>From no-code sites to full-stack platforms—responsive, secure, and scalable.</p>
+    </section>
+
+    <section class="feature-section">
+        <h2>Mobile Apps</h2>
+        <p>Intuitive apps designed to solve everyday problems and enhance user experiences.</p>
+    </section>
+
+    <section class="feature-section">
+        <h2>Data Analytics Tools</h2>
+        <p>Smart systems for tracking, reporting, and decision-making.</p>
+    </section>
+
+    <section class="feature-section">
+        <h2>Game-Based Learning Tools</h2>
+        <p>Educational games that combine fun with skill-building.</p>
+    </section>
+
+    <section class="cta-section">
+        <h2>Let’s Build Together</h2>
+        <p>Collaborate with us to create impactful solutions tailored to your needs. Reach out today!</p>
+        <div class="cta-buttons">
+            <a href="Contact.html"><button class="primary-button">Contact Us</button></a>
+            <a href="BookDemo.html"><button class="outline-button">Book Demo</button></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 MasterNext Technologies. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="Contact.html">Contact Us</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/masternext.in/?utm_source=ig_web_button_share_sheet" target="_blank" class="social-link">Instagram</a>
+                <a href="https://www.linkedin.com/company/masternext-technologies-private-limited/" target="_blank" class="social-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll(
+            ".header-section, .features-list-section, .feature-section, .testimonial-section, .cta-section, .faq-section"
+        );
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+
+        sections.forEach((section) => observer.observe(section));
+      });
+    </script>
+</body>
+</html>
